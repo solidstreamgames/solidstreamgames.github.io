@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Topdown Attack Game</title>
+    <title>Unity WebGL Player | ATTACK! BUG!</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=800 height=500></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,20 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Topdown Attack Game</div>
+        <div id="unity-build-title">ATTACK! BUG!</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WEBGL.loader.js";
+      var loaderUrl = buildUrl + "/GAME BUILD.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WEBGL.data.unityweb",
-        frameworkUrl: buildUrl + "/WEBGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/WEBGL.wasm.unityweb",
+        dataUrl: buildUrl + "/GAME BUILD.data",
+        frameworkUrl: buildUrl + "/GAME BUILD.framework.js",
+        codeUrl: buildUrl + "/GAME BUILD.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Topdown Attack Game",
-        productVersion: "1.0",
+        companyName: "SolidStream Games",
+        productName: "ATTACK! BUG!",
+        productVersion: "1.1",
       };
 
       var container = document.querySelector("#unity-container");
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "800px";
+        canvas.style.height = "500px";
       }
       loadingBar.style.display = "block";
 
